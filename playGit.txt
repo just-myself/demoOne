@@ -1,0 +1,19 @@
+git 提交本地仓库
+在工作去编辑好的代码要放置到本地时
+git commit -a -m "说明"
+
+
+git 提交远程仓库
+
+当文件被存放到git本地时，
+git remote查看当前远程版本库的名字
+再 git push 远程仓库的名字 master分支
+
+当本地数据与远程冲突时
+git fetch  将远程数据获取下来
+git diff master origin/master  查看冲突
+git merge origin/master   合并文件，再去工作文件手动选择需要的选择
+修改完之后 再次提交 git commit -a -m "...." 冲突解决完成
+再次push到远程  git push ........
+
+或者 直接 git pull 合
